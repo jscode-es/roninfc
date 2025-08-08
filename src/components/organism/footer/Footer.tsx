@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
 	return (
-		<footer className=" text-white py-8 mt-8 mb-20">
+		<footer className=" text-white py-8 mt-8 mb-20 px-8">
 			<div
 				id="linea"
 				className="w-1/2 mx-auto h-1 bg-blue-600 mb-24"

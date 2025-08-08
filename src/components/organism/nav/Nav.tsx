@@ -32,13 +32,15 @@ export function Nav() {
 						className="mr-3"
 					/>
 					<div className="flex flex-col">
-						<span className="text-2xl font-bold">Rōnin FC</span>
-						<small className="bg-pink-500 rounded-2xl px-2 text-[10px] text-white uppercase">
+						<span className="text-xl md:text-2xl font-bold">
+							Rōnin FC
+						</span>
+						<small className="bg-pink-500 rounded-2xl px-2  text-[8px] md:text-[10px] text-white uppercase">
 							Pagina no oficial
 						</small>
 					</div>
 				</div>
-				<ul className="flex space-x-6 text-xl">
+				<ul className=" space-x-6 text-xl hidden md:flex">
 					<li>
 						<a href="#home" className="hover:text-gray-300">
 							Inicio
@@ -66,8 +68,11 @@ export function Nav() {
 					</li>
 				</ul>
 				<div>
-					<button className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">
-						Únete al equipo
+					<button className="bg-blue-600 text-white px-3 py-1  md:px-4 md:py-2 rounded-full hover:bg-blue-700 transition">
+						<span className="hidden md:inline">
+							¡Únete al equipo!
+						</span>
+						<span className="md:hidden">Unirse</span>
 					</button>
 				</div>
 			</div>

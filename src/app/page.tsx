@@ -36,7 +36,7 @@ function LiveDot() {
 export default function Home() {
 	return (
 		<div
-			className=" text-white  bg-no-repeat bg-contain bg-right-bottom bg-fixed"
+			className=" text-white  bg-no-repeat bg-contain bg-right-bottom bg-fixed fixed h-screen w-screen overflow-auto"
 			style={{ backgroundImage: "url('/image/fondo-2.png')" }}
 			id="home"
 		>
@@ -51,63 +51,57 @@ export default function Home() {
 					<source src="/video/back.mp4" type="video/mp4" />
 					Your browser does not support the video tag.
 				</video>
-				<div className="absolute inset-0 w-full h-full flex items-center justify-center">
+				<div className="absolute inset-0 w-full h-full flex items-center justify-center px-5">
 					<div className="text-center max-w-7xl flex items-center justify-center flex-col">
 						<Image
 							src="/image/logo.png"
 							alt="Ronin FC Logo"
 							width={300}
 							height={300}
-							className="mb-5"
+							className="mb-5 w-[100px] h-[100px] md:w-[300px] md:h-[300px]"
 						/>
 
-						<h1 className="text-8xl font-bold mb-4">
+						<h1 className="text-4xl md:text-8xl font-bold mb-4">
 							Rōnin FC: El nuevo guerrero de la Quarta Catalana
 						</h1>
-						<p className="text-2xl text-gray-300 text-balance">
+						<p className="text-base md:text-2xl text-gray-300 text-balance">
 							Nuevo en la Quarta Catalana y listo para romperla.
 							Rōnin FC no viene a jugar “como siempre”, viene a
 							cambiar el juego. Garra, estilo y cero miedo al
 							ataque
 						</p>
-						<span className="text-2xl font-bold text-white mt-10 block bg-slate-950 rounded-full px-5 py-2">
+						<span className="text-lg md:text-2xl font-bold text-white mt-10 block bg-slate-950 rounded-full px-5 py-2">
 							#HolaRoninCatalan
 						</span>
 					</div>
 				</div>
 			</section>
-			<Marquee className="bg-gray-800 text-white p-5 text-center mb-20">
-				<p className="text-2xl font-bold">
-					Ronin FC lidera la Quarta Catalana
-				</p>
+			<Marquee className="bg-gray-800 text-white p-5  font-bold text-lg md:text-2xl text-center mb-20">
+				<p>Ronin FC lidera la Quarta Catalana</p>
 				<Space />
-				<p className="text-2xl font-bold">Próximo partido en casa</p>
+				<p>Próximo partido en casa</p>
 				<Space />
-				<p className="text-2xl font-bold ">
-					Entradas ya disponibles en la web oficial del Ronin FC
-				</p>
+				<p>Entradas ya disponibles en la web oficial del Ronin FC</p>
 				<Space />
-				<p className="text-2xl font-bold">
-					¡Síguenos en redes sociales para más actualizaciones!
-				</p>
+				<p>¡Síguenos en redes sociales para más actualizaciones!</p>
 				<Space />
-				<p className="text-2xl font-bold">
+				<p>
 					¡Únete a la comunidad de Rōnin FC y sé parte de la
 					revolución del fútbol!
 				</p>
 			</Marquee>
-			<section className=" text-white py-20" id="play_team">
-				<div className="container mx-auto flex flex-row gap-16 items-center">
-					<div className="mb-10 text-start flex flex-col gap-6 items-start w-full max-w-2xl">
+			<section className=" text-white py-0 md:py-20" id="play_team">
+				<div className="container mx-auto flex flex-col md:flex-row  gap-8 md:gap-16 items-center px-8">
+					<div className="mb-0 md:mb-10  text-start flex flex-col gap-6 items-start w-full max-w-2xl">
 						<div className="">
-							<h1 className="font-bold text-2xl mb-4">
+							<h1 className="font-bold text-lg md:text-2xl mb-4">
 								Pasión y lucha en cada partido
 							</h1>
-							<h2 className="font-bold text-7xl mb-4">
+							<h2 className="font-bold text-3xl md:text-7xl mb-4">
 								Rōnin FC: El Espíritu Samurai en la Quarta
 								Catalana
 							</h2>
-							<div className="text-gray-300 text-2xl text-start flex flex-col gap-4">
+							<div className="text-gray-300 text-base md:text-2xl text-start flex flex-col gap-4">
 								<p className="">
 									Rōnin FC llega a la Quarta Catalana con la
 									fuerza de una comunidad que no se rinde. En
@@ -133,16 +127,19 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section id="frase_motivacional" className="text-white py-20 ">
-				<div className="container mx-auto text-center">
+			<section
+				id="frase_motivacional"
+				className="text-white py-10 md:py-20"
+			>
+				<div className="container mx-auto text-center px-8">
 					<div
 						id="linea"
-						className="w-1/2 mx-auto h-1 bg-blue-600 mb-20"
+						className="w-1/2 mx-auto h-1 bg-blue-600 mb-10 md:mb-20"
 					></div>
-					<h2 className="text-8xl font-bold mb-6">
+					<h2 className="text-3xl md:text-8xl font-bold mb-6">
 						“En Rōnin FC no solo jugamos, luchamos cada minuto.”
 					</h2>
-					<p className="text-2xl text-gray-300 mb-4 text-balance">
+					<p className=" text-lg md:text-2xl text-gray-300 mb-4 text-balance">
 						Esta es nuestra filosofía. Cada partido es una
 						oportunidad para demostrar nuestra pasión y dedicación.
 						Estamos aquí para dejar huella en la historia del
@@ -150,13 +147,13 @@ export default function Home() {
 					</p>
 					<div
 						id="linea"
-						className="w-1/2 mx-auto h-1 bg-blue-600 mt-20"
+						className="w-1/2 mx-auto h-1 bg-blue-600 mt-10 md:mt-20"
 					></div>
 				</div>
 			</section>
-			<section className=" text-white py-20" id="about">
-				<div className="container mx-auto gap-10 flex flex-row justify-center items-center ">
-					<div className="md:w-1/2  w-[1200px] h-[500px] relative ">
+			<section className=" text-white py-0 md:py-20" id="about">
+				<div className="container mx-auto gap-10 flex flex-col md:flex-row justify-center items-center px-8">
+					<div className="w-full md:w-[1200px] aspect-video   relative ">
 						<Image
 							src="/image/team.png"
 							alt="Ronin FC Banner"
@@ -165,18 +162,18 @@ export default function Home() {
 						/>
 					</div>
 					<div className="container mx-auto text-start max-w-2xl">
-						<h2 className="text-8xl font-bold mb-6">
+						<h2 className="text-3xl md:text-8xl font-bold mb-6">
 							Acerca de Rōnin FC
 						</h2>
-						<div className="text-gray-300">
-							<p className="text-lg mb-4">
+						<div className="text-gray-300 text-base md:text-lg">
+							<p className="mb-4">
 								Rōnin FC es un club de fútbol que nace con la
 								misión de traer un nuevo enfoque al deporte. Con
 								un equipo lleno de pasión y dedicación, estamos
 								aquí para demostrar que el fútbol es más que un
 								juego; es una forma de vida.
 							</p>
-							<p className="text-lg">
+							<p className="">
 								Únete a nosotros en este emocionante viaje y sé
 								parte de algo grande. Juntos, haremos historia
 								en la Quarta Catalana.
@@ -184,15 +181,15 @@ export default function Home() {
 						</div>
 						<ul
 							id="tags"
-							className="text-lg flex flex-wrap gap-2 mt-10"
+							className=" md:text-lg text-xs flex flex-wrap gap-2 mt-10 mb-10 md:mb-0"
 						>
-							<li className="inline-block mr-2  text-white px-5 py-1 rounded-full border-2 border-blue-700">
+							<li className="inline-block mr-0 md:mr-2  text-white px-5 py-1 rounded-full border-2 border-blue-700">
 								#Fútbol
 							</li>
-							<li className="inline-block mr-2  text-white px-5 py-1 rounded-full border-2 border-blue-700">
+							<li className="inline-block  mr-0 md:mr-2   text-white px-5 py-1 rounded-full border-2 border-blue-700">
 								#Pasión
 							</li>
-							<li className="inline-block mr-2  text-white px-5 py-1 rounded-full border-2 border-blue-700">
+							<li className="inline-block  mr-0 md:mr-2   text-white px-5 py-1 rounded-full border-2 border-blue-700">
 								#Equipo
 							</li>
 						</ul>
@@ -200,7 +197,7 @@ export default function Home() {
 				</div>
 			</section>
 			<section className="" id="blog">
-				<ul className="container mx-auto flex flex-row gap-10 py-20">
+				<ul className="container mx-auto flex flex-row gap-10 py-0 md:py-20 px-8">
 					<li className="bg-gray-800 rounded-lg w-full max-w-2xl">
 						<div
 							id="short_video"
@@ -231,11 +228,11 @@ export default function Home() {
 								Your browser does not support the video tag.
 							</video>
 						</div>
-						<div className="p-10">
-							<h3 className="text-4xl font-bold mb-4">
+						<div className="p-6 md:p-10">
+							<h3 className="text-2xl md:text-4xl  font-bold mb-4">
 								La historia de Rōnin FC: Un nuevo comienzo
 							</h3>
-							<p className="text-lg text-gray-300 mb-4">
+							<p className="text-base md:text-lg text-gray-300 mb-4">
 								Rōnin FC nace con la visión de revolucionar el
 								fútbol en la Quarta Catalana. Con un equipo
 								dedicado y una pasión inquebrantable, estamos
@@ -243,7 +240,7 @@ export default function Home() {
 							</p>
 						</div>
 					</li>
-					<li className="bg-gray-800 rounded-lg w-full max-w-2xl">
+					<li className="bg-gray-800 rounded-lg w-full max-w-2xl hidden md:block">
 						<div
 							id="short_video"
 							className="relative overflow-hidden"
@@ -286,7 +283,7 @@ export default function Home() {
 							</p>
 						</div>
 					</li>
-					<li className="bg-gray-800  rounded-lg w-full max-w-2xl">
+					<li className="bg-gray-800  rounded-lg w-full max-w-2xl  hidden md:block">
 						<div
 							id="short_video"
 							className="relative overflow-hidden"
@@ -332,13 +329,13 @@ export default function Home() {
 				</ul>
 			</section>
 			<section className=" text-white py-20" id="play_team">
-				<div className="container mx-auto flex flex-row gap-16 items-center">
+				<div className="container mx-auto flex flex-col md:flex-row gap-0 md:gap-16 items-center px-8">
 					<div className="mb-10 text-start flex flex-col gap-6 items-start w-full max-w-2xl">
 						<div className="">
 							<h1 className="font-bold text-4xl mb-4">
 								<LiveDot />
 							</h1>
-							<h2 className="font-bold text-8xl mb-4">
+							<h2 className="font-bold  md:text-8xl text-3xl mb-4">
 								Rōnin FC vs elRayo FC
 							</h2>
 							<div className="text-gray-300 text-start flex flex-col gap-4">
@@ -357,7 +354,7 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="flex flex-row gap-4 items-center justify-center">
-							<button className="bg-blue-600 text-white flex flex-row gap-2 justify-center items-center text-2xl px-8 py-2 rounded-full hover:bg-blue-700 transition">
+							<button className="bg-blue-600 text-white flex flex-row gap-2 justify-center items-center text-xl md:text-2xl px-8 py-2 rounded-full hover:bg-blue-700 transition">
 								Ver Partido
 							</button>
 							<div className="w-[50px] h-[50px] rounded-full  border-2 border-blue-700 flex justify-center items-center">
@@ -382,12 +379,12 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="text-white py-20" id="team">
-				<div className="container mx-auto text-center">
-					<h2 className="text-8xl font-bold mb-6">
+			<section className="text-white py-0 md:py-20" id="team">
+				<div className="container mx-auto text-center px-6">
+					<h2 className="text-4xl md:text-8xl font-bold mb-6">
 						Conoce a nuestros jugadores
 					</h2>
-					<p className="text-2xl text-gray-300 mb-20">
+					<p className="text-lg md:text-2xl text-gray-300 mb-10 md:mb-20">
 						En Rōnin FC, cada jugador es un guerrero. Conoce a
 						quienes defienden nuestros colores y luchan por la
 						victoria en cada partido.
