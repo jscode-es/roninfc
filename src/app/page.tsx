@@ -5,6 +5,8 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import { IoLogoTwitch, IoLogoYoutube } from "react-icons/io";
 
+export const revalidate = 60; // ↔ rehidrata cada 60s (barato y cacheable)
+
 function Space() {
 	return (
 		<span
