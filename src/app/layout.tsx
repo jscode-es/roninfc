@@ -15,7 +15,7 @@ const lato = Lato({
 
 export const metadata: Metadata = {
 	title: "Ronin FC - No official",
-	description: "Equipo de fútbol amateur de la Primera Catalana",
+	description: "Equipo de fútbol amateur de la Quarta Catalana",
 };
 
 export default function RootLayout({
