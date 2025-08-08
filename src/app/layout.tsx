@@ -3,12 +3,12 @@ import "./globals.css";
 
 import { Lato, Oswald } from "next/font/google";
 
-export const oswald = Oswald({
+const oswald = Oswald({
 	subsets: ["latin"],
 	weight: ["400", "700"],
 });
 
-export const lato = Lato({
+const lato = Lato({
 	subsets: ["latin"],
 	weight: ["400", "700"],
 });
