@@ -20,7 +20,7 @@ export default function Footer() {
 						<h2 className="text-3xl font-bold">Rōnin FC</h2>
 						<p className="mt-2 text-lg text-gray-400 text-balance">
 							El espíritu samurái en cada partido. Orgullo y
-							pasión en la Primera Catalana.
+							pasión en la Quarta Catalana.
 						</p>
 					</div>
 				</div>

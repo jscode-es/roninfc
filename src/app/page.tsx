@@ -62,10 +62,10 @@ export default function Home() {
 						/>
 
 						<h1 className="text-8xl font-bold mb-4">
-							Rōnin FC: El nuevo guerrero de la Primera Catalana
+							Rōnin FC: El nuevo guerrero de la Quarta Catalana
 						</h1>
 						<p className="text-2xl text-gray-300 text-balance">
-							Nuevo en la Primera Catalana y listo para romperla.
+							Nuevo en la Quarta Catalana y listo para romperla.
 							Rōnin FC no viene a jugar “como siempre”, viene a
 							cambiar el juego. Garra, estilo y cero miedo al
 							ataque
@@ -78,7 +78,7 @@ export default function Home() {
 			</section>
 			<Marquee className="bg-gray-800 text-white p-5 text-center mb-20">
 				<p className="text-2xl font-bold">
-					Ronin FC lidera la Primera Catalana
+					Ronin FC lidera la Quarta Catalana
 				</p>
 				<Space />
 				<p className="text-2xl font-bold">Próximo partido en casa</p>
@@ -104,12 +104,12 @@ export default function Home() {
 								Pasión y lucha en cada partido
 							</h1>
 							<h2 className="font-bold text-7xl mb-4">
-								Rōnin FC: El Espíritu Samurai en la Primera
+								Rōnin FC: El Espíritu Samurai en la Quarta
 								Catalana
 							</h2>
 							<div className="text-gray-300 text-2xl text-start flex flex-col gap-4">
 								<p className="">
-									Rōnin FC llega a la Primera Catalana con la
+									Rōnin FC llega a la Quarta Catalana con la
 									fuerza de una comunidad que no se rinde. En
 									cada partido defendemos nuestros valores y
 									luchamos juntos. Esta temporada, el césped
@@ -179,7 +179,7 @@ export default function Home() {
 							<p className="text-lg">
 								Únete a nosotros en este emocionante viaje y sé
 								parte de algo grande. Juntos, haremos historia
-								en la Primera Catalana.
+								en la Quarta Catalana.
 							</p>
 						</div>
 						<ul
@@ -237,7 +237,7 @@ export default function Home() {
 							</h3>
 							<p className="text-lg text-gray-300 mb-4">
 								Rōnin FC nace con la visión de revolucionar el
-								fútbol en la Primera Catalana. Con un equipo
+								fútbol en la Quarta Catalana. Con un equipo
 								dedicado y una pasión inquebrantable, estamos
 								listos para enfrentar cualquier desafío.
 							</p>
