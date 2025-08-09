@@ -4,16 +4,25 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export function Nav() {
-	// Estado para controlar si está en la parte superior
 	const [isScrolled, setIsScrolled] = useState(false);
 
 	useEffect(() => {
+		// obtener el elemento padre que hace el scroll
+		const container = document.getElementById("home");
+		if (!container) return;
+
 		const handleScroll = () => {
-			setIsScrolled(window.scrollY > 0); // si scroll > 0, cambia a fondo negro
+			setIsScrolled(container.scrollTop > 0); // si scroll > 0 => true
 		};
 
-		window.addEventListener("scroll", handleScroll);
-		return () => window.removeEventListener("scroll", handleScroll);
+		container.addEventListener("scroll", handleScroll, { passive: true });
+
+		// estado inicial
+		handleScroll();
+
+		return () => {
+			container.removeEventListener("scroll", handleScroll);
+		};
 	}, []);
 
 	return (

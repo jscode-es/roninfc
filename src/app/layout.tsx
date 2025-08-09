@@ -26,7 +26,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${oswald.className} ${lato.className} antialiased bg-slate-950`}
+				className={`${oswald.className} ${lato.className} antialiased bg-slate-950 fixed `}
 			>
 				{children}
 			</body>
