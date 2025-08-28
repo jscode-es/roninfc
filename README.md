@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rōnin FC - The Official Website
 
-## Getting Started
+<p align="center">
+  <img src="public/image/logo.png" alt="Rōnin FC Logo" width="150"/>
+</p>
 
-First, run the development server:
+<h1 align="center">Rōnin FC</h1>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<p align="center">
+  <strong>The Spirit of the Warrior, The Heart of the Game</strong>
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="center">
+  This is the official web presence for <strong>Rōnin FC</strong>, the fiercest new contender in the Quarta Catalana league. We are more than just a football club; we are a community of warriors, united by passion, discipline, and a relentless drive to win.
+</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<p align="center">
+  <a href="#technologies-used">Technologies</a> •
+  <a href="#getting-started">Getting Started</a> •
+  <a href="#available-scripts">Scripts</a>
+</p>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+This website is built and powered by a modern, high-performance stack:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   **[Next.js](https://nextjs.org/)** - The React Framework for the Web.
+-   **[React](https://react.dev/)** - For building dynamic user interfaces.
+-   **[TypeScript](https://www.typescriptlang.org/)** - For robust, scalable, and maintainable code.
+-   **[Tailwind CSS](https://tailwindcss.com/)** - For a utility-first approach to styling.
+-   **[React Fast Marquee](https://www.react-fast-marquee.com/)** - For creating smooth, performant scrolling announcements.
+-   **[React Icons](https://react-icons.github.io/react-icons/)** - For including a wide range of icons.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🏁 Getting Started
 
-## Deploy on Vercel
+To get a local copy up and running, follow these simple steps.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You need to have [Node.js](https://nodejs.org/en) (version 20 or later) and npm installed on your machine.
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
+2.  **Install NPM packages:**
+    ```bash
+    npm install
+    ```
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. The page auto-updates as you edit the file.
+
+## 📜 Available Scripts
+
+In the project directory, you can run:
+
+-   `npm run dev`: Runs the app in development mode with Turbopack.
+-   `npm run build`: Builds the app for production.
+-   `npm run start`: Starts a production server.
+-   `npm run lint`: Runs the linter to check for code quality issues.
+
+---
+
+<p align="center">
+  <strong>#HolaRoninCatalan</strong>
+</p>
